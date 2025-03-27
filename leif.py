@@ -1,4 +1,4 @@
 def hej():
-    print("Hej!")
+    print("Hej")
 
 hej()
