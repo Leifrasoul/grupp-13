@@ -1,12 +1,27 @@
 import leif 
 import alex
 def main():
-    namn = input("Vem vill du säga hej till? ").lower()
+    user_input = input("Vem vill du prata med").lower().split()
 
-    if namn == "leif":
-        leif.hello()
-    elif namn == "alex":
-        alex.hello()
+    if len(user_input) == 1:
+        name = user_input[0]
+        action = "hello"
+    elif len(user_input) == 2:
+        name, action = user_input
+    else:
+        print("Fel format")
+        return
+
+    if name == "sebbe":
+        if action == "hello":
+            leif.hello()
+        elif action == "food":
+            leif.food()
+    elif name == "alex":
+        if action == "hello":
+            alex.hello()
+        elif action == "food":
+            alex.food()
     else:
         print("Ingen sådan person ")
 
