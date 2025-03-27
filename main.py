@@ -1,10 +1,10 @@
 import leif
 import alex
+import ammar
 
 def main():
-    user_input = input("Skriv t.ex. 'leif food', 'alex drink' eller bara 'leif': ").lower().split()
+    user_input = input("Skriv t.ex. 'leif food', 'alex drink' eller bara 'ammar': ").lower().split()
 
-    # Standard: om bara ett namn anges, använd "hello"
     if len(user_input) == 1:
         name = user_input[0]
         action = "hello"
@@ -15,7 +15,6 @@ def main():
         print("Fel format")
         return
 
-    # LEIF
     if name == "leif":
         if action == "hello":
             leif.hello()
@@ -26,7 +25,6 @@ def main():
         else:
             print("Okänd funktion för Leif")
 
-    # ALEX
     elif name == "alex":
         if action == "hello":
             alex.hello()
@@ -36,6 +34,16 @@ def main():
             alex.drink()
         else:
             print("Okänd funktion för Alex")
+
+    elif name == "ammar":
+        if action == "hello":
+            ammar.hello()
+        elif action == "food":
+            ammar.food()
+        elif action == "drink":
+            ammar.drink()
+        else:
+            print("Okänd funktion för Ammar")
 
     else:
         print("Ingen sådan person")
