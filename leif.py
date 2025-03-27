@@ -3,3 +3,6 @@ def hello ():
 
 def food():
     print("Hamburgare")
+
+def drink():
+    print("Pepsi")
