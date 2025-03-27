@@ -1,5 +1,18 @@
 # grupp-13
 leker med git
+
+
+
+
 leif
-Alex
+
+
 Ammar
+
+Hej från alex
+
+hej från leif
+
+
+
+
