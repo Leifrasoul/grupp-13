@@ -1,3 +1,4 @@
+import leif
 print("Mata in ett tal")
 
 input("")
